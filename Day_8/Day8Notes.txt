@@ -1,0 +1,96 @@
+MONGODB
+
+buka 2 server
+1 buat aktivasi server
+ke file bin
+mongod
+
+1 buat work
+masuk ke bin
+mongo
+
+> show dbs                                      ==> untuk liat database
+or
+> show databases
+> db                                            ==> ngecek lagi di database mana
+> use tokoonline                                ==> buat bikin sekaligus switch database
+> db.createCollection('seller')                 ==> buat bikin table/collection
+> show collections                              ==> buat liat collections
+> db.pelapak.drop()                             ==> buat ngapus collection
+> db.dropDatabase()                             ==> buat ngapus database
+
+> db.createUser({                               ==> buat bikin user
+... user: 'lintang',
+... pwd: '12345',
+... roles: ['dbAdmin', 'readWrite']             ==> sebagai admin dan bisa baca sekaligus edit
+... })
+
+> show users;                                   ==> buat ngeliat usernya siapa aja
+or
+> db.getUsers()
+> db.getUsers({showCredentials: true})          ==> untuk ngeliat usernya siapa aja dan passwordnya yg sudah dihashing         
+> db.seller.insert({nama: 'Andi', usia: 22})    ==> untuk insert 1 data
+> db.seller.insert([                            ==> untuk insert banyak data
+... {nama: 'Budi', usia: 23},
+... {nama: 'Caca', usia: 24}
+... ])
+
+> db.seller.find()                              ==> buat ngeliat data
+or
+> db.seller.find().pretty()                     ==> lebih cantik
+> db.seller.find({name: 'Andi'})                ==> sebagian aja yg ditampilin
+
+> db.seller.remove({});                         ==> hapus semua data
+> db.seller.remove({job: 'PNS'})                ==> hapus sebagian data
+
+> db.seller.update(                             ==> buat edit data (overwrite)
+... {nama: 'Andi'},                             ==> yg mana yg mau diedit
+... {nama: 'Andi', kota: 'jakarta'})            ==> hasil setelah dieditnya jadi gimana
+
+> db.seller.update(                             ==> buat edit data (property tertentu aja) dan nambah property
+... {nama: 'Andi'},
+... {$set: {kota: 'cimahi'}})
+
+> db.seller.updateMany(                         ==> buat nambahin property di semua data
+... {},
+... {$set: {nationality: 'Indonesia'}})
+
+> db.seller.updateMany(                         ==> buat edit nama propertynya
+... {},
+... {$rename: {'usia':'age'}}
+... )
+
+> db.resto.find().count()                       ==> buat nyari jumlah data
+
+> db.seller.find(
+... {usia: {$gt: 23}}                           ==> gt = greater than, gte = greater than equal, lt = lower than
+... )
+
+> db.seller.find(
+... {$or: [{name:'Andi'}, {name:'Caca'}]}       ==> nyari yg namanya Andi atau namanya Caca
+... )
+
+> db.seller.find(
+... {$and: [{nationality:'Indonesia'}, {usia: {$gte: 25}}]}
+... )
+
+> db.seller.insert(                             ==> di dalam address ada city, zipcode, dan gps. Di dalam gps ada list lagi
+... {nama: 'Euis', address: {
+... city: 'Cimahi', zipcode: '12345', gps: [
+... {lat: 123}, {long: 789}
+... ]}})
+
+> db.seller.find().sort({usia:1})               ==> ascending
+> db.seller.find().sort({usia:-1})              ==> descending
+> db.seller.find().sort({usia:-1, name: 1})     ==> sort gabung
+
+> db.seller.find().limit(2)                     ==> nyari 2 data teratas aja
+
+> db.seller.find().sort({usia:-1, name: 1}).limit(2)    ==> nyari 2 orang tertua
+
+> db.resto.find({name: "Harriet's Kitchen"}, {name:1, restaurant_id:1})       ==> nampilin nama dan id restoran dari "Harriet's Kitchen"
+
+
+
+ke folder bin
+mongoimport --db resto --collection resto --file restaurants.json --jsonArray

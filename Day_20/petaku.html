@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.5.1/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://rawcdn.githack.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css"/>
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_9987be69c7d84de0a33022e8e9200dbb {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9987be69c7d84de0a33022e8e9200dbb" ></div>
+        
+</body>
+<script>    
+    
+            var map_9987be69c7d84de0a33022e8e9200dbb = L.map(
+                "map_9987be69c7d84de0a33022e8e9200dbb",
+                {
+                    center: [-6.1754374, 106.8272385],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 20,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_ddd36516f79f4e5f970da1601abc5116 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_9987be69c7d84de0a33022e8e9200dbb);
+        
+    
+            var marker_cb270359c4bb45ce93cd15de66fc816d = L.marker(
+                [-6.1754374, 106.8272385],
+                {}
+            ).addTo(map_9987be69c7d84de0a33022e8e9200dbb);
+        
+    
+            var icon_aed902fc214e4497b8543ef0697b9f4e = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "cloud", "iconColor": "white", "markerColor": "orange", "prefix": "glyphicon"}
+            );
+            marker_cb270359c4bb45ce93cd15de66fc816d.setIcon(icon_aed902fc214e4497b8543ef0697b9f4e);
+        
+    
+        var popup_956440406ec74fc39d7a03c3100dea11 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_925085d1a7de4b90a6655330c1346822 = $(`<div id="html_925085d1a7de4b90a6655330c1346822" style="width: 100.0%; height: 100.0%;"><b>MONAS</b><br><small>Jakarta</small></div>`)[0];
+            popup_956440406ec74fc39d7a03c3100dea11.setContent(html_925085d1a7de4b90a6655330c1346822);
+        
+
+        marker_cb270359c4bb45ce93cd15de66fc816d.bindPopup(popup_956440406ec74fc39d7a03c3100dea11)
+        ;
+
+        
+    
+    
+            marker_cb270359c4bb45ce93cd15de66fc816d.bindTooltip(
+                `<div>
+                     Halo
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var marker_8dabbd21d1c646958501bdb593840147 = L.marker(
+                [-6.1752374, 106.8274385],
+                {}
+            ).addTo(map_9987be69c7d84de0a33022e8e9200dbb);
+        
+    
+            var icon_c6400593b4944adaa7dc9db5adb02700 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "optin-monster", "iconColor": "white", "markerColor": "purple", "prefix": "fa"}
+            );
+            marker_8dabbd21d1c646958501bdb593840147.setIcon(icon_c6400593b4944adaa7dc9db5adb02700);
+        
+    
+        var popup_895cc4ac5bc24785b7296dc256bf2587 = L.popup({"maxWidth": "100%"});
+
+        
+            var html_01afd346244c4c0b8e869545fb60910a = $(`<div id="html_01afd346244c4c0b8e869545fb60910a" style="width: 100.0%; height: 100.0%;"><iframe width="300" height="200" src="https://www.youtube.com/embed/SEGbYdUe9jM" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>`)[0];
+            popup_895cc4ac5bc24785b7296dc256bf2587.setContent(html_01afd346244c4c0b8e869545fb60910a);
+        
+
+        marker_8dabbd21d1c646958501bdb593840147.bindPopup(popup_895cc4ac5bc24785b7296dc256bf2587)
+        ;
+
+        
+    
+    
+            marker_8dabbd21d1c646958501bdb593840147.bindTooltip(
+                `<div>
+                     <img width="100px" src="https://2.bp.blogspot.com/-0WirdbkDv4U/WxUkajG0pAI/AAAAAAAADNA/FysRjLMqCrw_XkcU0IQwuqgKwXaPpRLRgCLcBGAs/s1600/1528109954774.jpg">
+                 </div>`,
+                {"sticky": true}
+            );
+        
+    
+            var circle_1a6b249a0bca471891ebf395911df0a8 = L.circle(
+                [-6.1754374, 106.8272385],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "yellow", "fillOpacity": 0.2, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 100, "stroke": true, "weight": 3}
+            ).addTo(map_9987be69c7d84de0a33022e8e9200dbb);
+        
+</script>

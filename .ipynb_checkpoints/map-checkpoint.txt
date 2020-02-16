@@ -1,0 +1,63 @@
+HTML
+    Day 5
+    Day 6
+    Day 7
+MongoDB
+    Day 8
+    Day 9
+Numpy
+    Day 10
+    Day 11
+    Day 12
+Pandas
+    Day 13
+    Day 14
+    Day 15
+        1. Group by
+        2. Concat
+        3. Merge
+        4. Pivot
+        5. Multi Index
+    Day 16
+        1. SQL
+        2. Resample
+Matplotlib
+    Day 17
+        1. Line Chart
+        2. Scatter Chart
+        3. Annotation
+    Day 18
+        1. Line Chart
+        2. Ticks
+        3. Style
+        4. Figure
+        5. Subplot
+        6. Bar Chart
+        7. Multiple bar (normal & Stacked)
+        8. Scatter
+        9. Combine Plot
+        10. Pie Chart
+        11. Histogram
+        12. Image
+    Day 19
+        1. Heatmap
+        2. Korelasi
+        3. 3D Plotting
+    Day 20
+        1. 3D Plotting
+Seaborn
+    Day 20
+        2. Relplot
+        3. Bar Plot
+        4. Gabungan
+        5. Datasets in seaborn
+        6. Heatmap
+        7. Regression
+Folium
+    Day 20
+Plotly
+    Day 21
+Flask
+    Day 21
+    Day 22
+        

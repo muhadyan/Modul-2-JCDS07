@@ -1,0 +1,21 @@
+MENGKONEK MONGODB KE PYTHON
+
+> use pymongodb
+> db.createCollection('colmong')
+> db.colmong.insert([
+... {nama: 'Andi', usia:19, kota:'Jakarta'},
+... {nama: 'Budi', usia:25, kota:'Bandung'},
+... {nama: 'Caca', usia:31, kota:'Bandung'}
+... ])
+
+
+
+KAGGLE
+py -m pip install kaggle                                    ==> install kaggle
+kaggle datasets download -d rounakbanik/pokemon --unzip     ==> untuk download
+kaggle datasets list                                        ==> untuk liat ada dataset apa aja
+
+
+
+JUPYTER LAB
+py -m pip install jupyterlab                                    ==> install jupyter lab

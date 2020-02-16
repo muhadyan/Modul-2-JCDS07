@@ -1,0 +1,152 @@
+[
+    {
+        "Nama": "Nélson Semedo",
+        "Posisi": "Right Back",
+        "Umur": 26,
+        "Negara": "Portugal"
+    },
+    {
+        "Nama": "Luis Suarez",
+        "Posisi": "Forward",
+        "Umur": 32,
+        "Negara": "Uruguay"
+    },
+    {
+        "Nama": "Marc-Andre ter Stegen",
+        "Posisi": "Goalkeeper",
+        "Umur": 27,
+        "Negara": "Germany"
+    },
+    {
+        "Nama": "Gerard Pique",
+        "Posisi": "Centre Back",
+        "Umur": 32,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Jordi Alba",
+        "Posisi": "Left Back",
+        "Umur": 30,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Sergi Busquets",
+        "Posisi": "Defensive Midfielder",
+        "Umur": 31,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Sergi Roberto",
+        "Posisi": "Right Back",
+        "Umur": 27,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Lionel Messi",
+        "Posisi": "Right Wing",
+        "Umur": 32,
+        "Negara": "Argentina"
+    },
+    {
+        "Nama": "Rafinha",
+        "Posisi": "Centre Midfielder",
+        "Umur": 26,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Ivan Rakitic",
+        "Posisi": "Centre Midfielder",
+        "Umur": 31,
+        "Negara": "Croatia"
+    },
+    {
+        "Nama": "Neto",
+        "Posisi": "Goalkeeper",
+        "Umur": 30,
+        "Negara": "Brazil"
+    },
+    {
+        "Nama": "Samuel Umtiti",
+        "Posisi": "Centre Back",
+        "Umur": 26,
+        "Negara": "France"
+    },
+    {
+        "Nama": "Antoine Griezmann",
+        "Posisi": "Forward",
+        "Umur": 28,
+        "Negara": "France"
+    },
+    {
+        "Nama": "Arturo Vidal",
+        "Posisi": "Centre Midfielder",
+        "Umur": 32,
+        "Negara": "Chile"
+    },
+    {
+        "Nama": "Ousmane Dembélé",
+        "Posisi": "Forward",
+        "Umur": 22,
+        "Negara": "France"
+    },
+    {
+        "Nama": "Carles Aleñá",
+        "Posisi": "Centre Midfielder",
+        "Umur": 21,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Arthur",
+        "Posisi": "Centre Midfielder",
+        "Umur": 23,
+        "Negara": "Brazil"
+    },
+    {
+        "Nama": "Clément Lenglet",
+        "Posisi": "Centre Back",
+        "Umur": 24,
+        "Negara": "France"
+    },
+    {
+        "Nama": "Ernesto Valverde",
+        "Posisi": "Manager",
+        "Umur": 55,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Jean-Clair Todibo",
+        "Posisi": "Centre Back",
+        "Umur": 20,
+        "Negara": "France"
+    },
+    {
+        "Nama": "Frenkie de Jong",
+        "Posisi": "Centre Midfielder",
+        "Umur": 22,
+        "Negara": "Netherlands"
+    },
+    {
+        "Nama": "Junior Firpo",
+        "Posisi": "Left Back",
+        "Umur": 23,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Moussa Wagué",
+        "Posisi": "Right Back",
+        "Umur": 21,
+        "Negara": "Senegal"
+    },
+    {
+        "Nama": "David Concha",
+        "Posisi": "Forward",
+        "Umur": 23,
+        "Negara": "Spain"
+    },
+    {
+        "Nama": "Jean Mario Dongou",
+        "Posisi": "Forward",
+        "Umur": 24,
+        "Negara": "Cameroon"
+    }
+]

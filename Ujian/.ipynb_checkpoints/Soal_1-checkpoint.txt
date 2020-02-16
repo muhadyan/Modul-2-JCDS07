@@ -1,0 +1,57 @@
+mysql -u Adyan -p
+
+use sakila;
+
+1. Tampilkan daftar 10 film komedi dengan durasi tersingkat. Urutkan data berdasarkan film dengan durasi terpendek. Kolom yang diwajibkan tampil adalah title, category dan length.
+mysql> select film.title, category.name as category, film.length from
+    -> film inner join film_category
+    -> on film.film_id = film_category.film_id
+    -> inner join category
+    -> on category.category_id = film_category.category_id
+    -> where category.name = 'Comedy'
+    -> order by film.length, film.title
+    -> limit 10;
+
+2. Tampilkan daftar lengkap kategori film beserta jumlah film tiap kategori & rata-rata harga sewa DVD film tiap kategori. Urutkan data dari kategori dengan jumlah film terbanyak. Kolom yang diwajibkan ada minimal adalah kategori, jumlah film dan rata-rata harga sewa.
+mysql> select category as kategori, count(category) as jumlahMovie, avg(price) as rataHargaSewa from
+    -> film_list
+    -> group by category
+    -> order by count(film_list.category) desc;
+
+4. Tampilkan daftar 10 aktor/aktris yang paling banyak membintangi film. Kolom yang ditampilkan minimal: id aktor, nama depan, nama belakang dan jumlah film yang dibintangi kemudian urutkan dari aktor/aktris yang membintangi film terbanyak.
+mysql> select actor.actor_id, actor.first_name, actor.last_name, count(film_actor.actor_id) from
+    -> actor inner join film_actor
+    -> using (actor_id)
+    -> group by actor.actor_id
+    -> order by count(film_actor.actor_id) desc, actor_id desc
+    -> limit 10;
+
+5.Dari soal sebelumnya diketahui Gina Degeneres merupakan aktris yang paling banyak membintangi film, dengan total 42 judul film. Kategori film apakah yang paling banyak dibintanginya? Untuk mengetahuinya, tampilkan daftar kategori film beserta jumlah film yang pernah dibintangi oleh Gina Degeneres. Kolom yang diwajibkan ada yaitu kategori film dan jumlah film yang dibintangi.
+mysql> select film_list.category, count(film_list.category) as jumlah_Movie from
+    -> film_list inner join film_actor
+    -> on film_list.FID = film_actor.film_id
+    -> where film_actor.actor_id = '107'
+    -> group by film_list.category;
+
+6. Dari soal sebelumnya diketahui Gina Degeneres paling banyak membintangi film bergenre science-fiction, dengan total 7 judul film. Tampilkan daftar judul film sci-fi yang pernah dibintangi oleh Gina Degeneres. Kolom yang diwajibkan ada yaitu judul film dan kategorinya.
+mysql> select film_list.title, film_list.category from
+    -> film_list inner join film_actor
+    -> on film_list.FID = film_actor.film_id
+    -> where film_actor.actor_id = '107' and film_list.category = 'Sci-Fi';
+
+7. Tampilkan daftar 10 aktor/aktris yang paling banyak membintangi film horror. Kolom yang ditampilkan minimal: id aktor, nama depan, nama belakang dan jumlah film horror yang dibintangi kemudian urutkan dari aktor/aktris yang membintangi film horror terbanyak.
+mysql> select actor.actor_id, actor.first_name, actor.last_name, count(film_list.title) as jumlah_Movie from
+    -> actor inner join film_actor
+    -> on actor.actor_id = film_actor.actor_id
+    -> inner join film_list
+    -> on film_list.FID = film_actor.film_id
+    -> where film_list.category = 'Horror'
+    -> group by actor.actor_id
+    -> order by count(film_list.title) desc
+    -> limit 10;
+
+8. Dari soal sebelumnya diketahui Julia McQueen merupakan aktris yang paling banyak membintangi film horror, dengan total 7 judul film. Tampilkan daftar judul film horror yang pernah dibintangi oleh Julia McQueen. Kolom yang diwajibkan ada yaitu judul film dan kategorinya.
+mysql> select film_list.title, film_list.category from
+    -> film_list inner join film_actor
+    -> on film_list.FID = film_actor.film_id
+    -> where film_actor.actor_id = '27' and film_list.category = 'Horror';
